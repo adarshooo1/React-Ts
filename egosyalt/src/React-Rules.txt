@@ -1,0 +1,33 @@
+### React Rules
+- return single element.
+
+    - semantics section/articles
+    - Fragment - let's up group element adding extra nodes
+    - Close the body if we don't want use div, So <></> or <React.Fragment></React.Fragment>
+
+    //Jsx or Tsx
+    <div tabIndex={1}>
+        <button onClick ={myFunction}>Click Me</button>
+        <label htmlFor="name>Name</label>
+        <input readOnly={true} id='name'/>
+    </div>
+
+    //Html
+    <div tabIndex={1}>
+        <button onclick ="myFunction()">Click Me</button>
+        <label For="name>Name</label>
+        <input readonly id='name'/>
+    </div>
+
+    //class in Jsx or Tsx
+    <div className="container"></div>
+
+    //class in html
+    <div class="container"></div>
+
+    //Self closing tags in jsx or Tsx
+    <Image />
+    <Link />
+    <HeroBanner />
+
+```js
