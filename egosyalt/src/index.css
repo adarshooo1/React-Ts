@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif, serif;
+}
+
+root {
+  height: 100%;
+  width: 100%;
+  background-color: #d5d3d3;
+}
