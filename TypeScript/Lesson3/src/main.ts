@@ -1,5 +1,3 @@
-import { parseInt } from "cypress/types/lodash";
-
 // Recap
 interface Person1 {
   fname: string;
@@ -150,7 +148,7 @@ const infinite = () => {
   }
 };
 
-//Customer type Guard
+//Custom type Guard
 const isNumber = (value: any): boolean => {
   return typeof value === "number" ? true : false;
 };
