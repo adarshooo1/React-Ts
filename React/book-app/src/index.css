@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PP Mori;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #f1f5f8;
+  color: #0a0113;
+}
+
+.BookContainer {
+  height: auto;
+  width: 300px;
+  background: #d2d2d2;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 2px solid rgb(66, 66, 66);
+}
+
+.BookImage {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+
+.ImageHolder {
+  width: 100%;
+  height: 263px;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.InfoHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.InfoHolder h1 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.InfoHolder h2 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.BookList {
+  width: 90vw;
+  max-width: 1170px;
+  display: grid;
+  margin: 10px auto;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .BookList {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
