@@ -1,0 +1,36 @@
+.StateContainer {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 40px auto;
+  align-items: center;
+  border-radius: 15px;
+  background: #827de6;
+  border: 2px solid #2a2a44;
+}
+
+.count_display {
+  font-size: 3vw;
+  padding: 15px;
+  font-weight: 900;
+  color: white;
+}
+
+.button_div {
+  display: flex;
+  gap: 40px;
+}
+
+.counter {
+  background-color: #1f1fda;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 2vw;
+  font-weight: 800;
+  border-radius: 5px;
+  border: 2px solid rgb(197, 191, 240);
+  margin: 10px auto;
+}
