@@ -34,3 +34,44 @@
   border: 2px solid rgb(197, 191, 240);
   margin: 10px auto;
 }
+
+.stateHolder {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.btn {
+  width: 40%;
+  height: 25px;
+  margin: auto;
+  background-color: #4646ea;
+  border: none;
+  outline: none;
+  color: beige;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.profileSkeleton {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #c0c5c6;
+  height: 100px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.githubInfo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.githubImage {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}

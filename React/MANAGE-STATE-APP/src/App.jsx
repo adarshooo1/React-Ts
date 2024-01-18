@@ -1,8 +1,11 @@
 import "./App.css";
-import { Starter, Middle, Final } from "./hooks/useState/04-useState-object";
+import {
+  Profile,
+  GithubUserList,
+} from "./hooks/useEffect/starter/04-fetch-data";
 
 function App() {
-  return <Middle />;
+  return <GithubUserList />;
 }
 
 export default App;
