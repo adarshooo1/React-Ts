@@ -1,11 +1,10 @@
 import "./App.css";
-import {
-  Profile,
-  GithubUserList,
-} from "./hooks/useEffect/starter/04-fetch-data";
+import { Example } from "./conditional-rendering/starter/03-ternary-operator";
+
+// import
 
 function App() {
-  return <GithubUserList />;
+  return <Example />;
 }
 
 export default App;
