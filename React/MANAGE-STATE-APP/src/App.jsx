@@ -1,10 +1,10 @@
 import "./App.css";
-import { Starter } from "./leverage-javascript/01-leverage-javascript";
+import { MultipleInputs } from "./forms/03-multiple-inputs";
 
 function App() {
   return (
     <div>
-      <Starter />
+      <MultipleInputs />
     </div>
   );
 }
