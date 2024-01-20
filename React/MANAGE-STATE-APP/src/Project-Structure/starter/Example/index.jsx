@@ -12,3 +12,5 @@ const Example = () => {
 };
 
 export default Example;
+
+// Here we fist import both the component then export both at one time.

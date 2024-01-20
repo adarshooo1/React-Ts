@@ -9,7 +9,19 @@ export const data = [
 export const people = [
   { id: 1, name: "Alex", nickName: "Corby" },
   { id: 2, name: "Adarsh" },
-  { id: 3, name: "oliver" },
+  {
+    id: 3,
+    name: "oliver",
+    images: [
+      {
+        small: {
+          url: "https://avatars.githubusercontent.com/u/1?v=4",
+        },
+      },
+    ],
+  },
+
+  { id: 4, name: "David Butler" },
 ];
 
 export const peopleClassification = [
