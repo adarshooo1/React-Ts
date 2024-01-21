@@ -1,10 +1,11 @@
 import "./App.css";
-import { MultipleInputs } from "./forms/03-multiple-inputs";
+// import { OtherInputs } from "./forms/04-others-inputs";
+import { FormDataAPI } from "./forms/05-formData-api";
 
 function App() {
   return (
     <div>
-      <MultipleInputs />
+      <FormDataAPI />
     </div>
   );
 }
