@@ -1,12 +1,10 @@
 import "./App.css";
-import { FetchData } from "./custom hook/final/02-fetch-data";
-// import { CustomHook } from "./custom hook/starter/01-toggle";
+import ContextAPI from "./challenges/Challenge1/context-api-challenges";
 
 function App() {
   return (
     <div>
-      {/* <CustomHook /> */}
-      <FetchData />
+      <ContextAPI />
     </div>
   );
 }
