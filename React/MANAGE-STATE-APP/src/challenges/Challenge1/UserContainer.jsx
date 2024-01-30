@@ -1,12 +1,11 @@
 import { User } from "lucide-react";
+import { useContext } from "react";
+import { NavbarContext } from "./Navbar";
 
-const UserContainer = ({
-  user,
-  setUser,
-  handleLogout,
-  inputValue,
-  setInputValue,
-}) => {
+const UserContainer = () => {
+  const { user, setUser, inputValue, setInputValue, handleLogout } =
+    useContext(NavbarContext);
+  // console.log(value);
   return (
     <div
       style={{
