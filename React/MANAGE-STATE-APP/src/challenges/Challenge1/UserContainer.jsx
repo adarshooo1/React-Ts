@@ -1,9 +1,12 @@
-import React, { useState } from "react";
 import { User } from "lucide-react";
 
-const UserContainer = () => {
-  const [user, setUser] = useState("Adarsh");
-  const [inputValue, setInputValue] = useState("");
+const UserContainer = ({
+  user,
+  setUser,
+  handleLogout,
+  inputValue,
+  setInputValue,
+}) => {
   return (
     <div
       style={{
@@ -25,7 +28,7 @@ const UserContainer = () => {
           {user && (
             <>
               <User style={{ fontWeight: "700" }} />
-              Welcome, Mr./Mrs. {user}
+              Welcome, Mr./Mrs. {user?.name}
             </>
           )}
 
@@ -44,7 +47,7 @@ const UserContainer = () => {
         </span>
       </div>
 
-      {user && (
+      {user ? (
         <button
           style={{
             border: "none",
@@ -57,15 +60,11 @@ const UserContainer = () => {
             padding: "3px 6px",
             margin: "0 10px",
           }}
-          onClick={() => {
-            setUser(null);
-          }}
+          onClick={handleLogout}
         >
           Logout
         </button>
-      )}
-
-      {!user && (
+      ) : (
         <button
           style={{
             border: "none",
@@ -79,7 +78,13 @@ const UserContainer = () => {
             margin: "0 10px",
           }}
           onClick={() => {
-            setUser(inputValue);
+            if (!user?.name && !inputValue) {
+              alert("Please enter the login name first!");
+              return;
+            }
+
+            setUser({ name: inputValue });
+            setInputValue(null);
           }}
         >
           Login

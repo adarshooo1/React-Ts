@@ -1,7 +1,12 @@
-import React from "react";
 import UserContainer from "./UserContainer";
 
-const NavLinks = () => {
+const NavLinks = ({
+  user,
+  setUser,
+  handleLogout,
+  inputValue,
+  setInputValue,
+}) => {
   return (
     <div style={{ display: "flex", gap: "40px", alignItems: "center" }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -20,7 +25,13 @@ const NavLinks = () => {
         </ul>
       </div>
       <div>
-        <UserContainer />
+        <UserContainer
+          user={user}
+          setUser={setUser}
+          handleLogout={handleLogout}
+          inputValue={inputValue}
+          setInputValue={setInputValue}
+        />
       </div>
     </div>
   );
