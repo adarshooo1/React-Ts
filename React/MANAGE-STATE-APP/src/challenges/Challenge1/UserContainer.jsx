@@ -1,10 +1,9 @@
 import { User } from "lucide-react";
-import { useContext } from "react";
-import { NavbarContext } from "./Navbar";
+import { useUserContext } from "./Navbar";
 
 const UserContainer = () => {
   const { user, setUser, inputValue, setInputValue, handleLogout } =
-    useContext(NavbarContext);
+    useUserContext();
   // console.log(value);
   return (
     <div
