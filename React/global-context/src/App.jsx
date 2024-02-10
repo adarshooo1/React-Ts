@@ -1,8 +1,12 @@
 import "./App.css";
-import { Wrapper } from "./starter/02-useContextHook";
+import UseEffectHook from "./Revision/useEffectHook";
 
 function App() {
-  return <Wrapper />;
+  return (
+    <>
+      <UseEffectHook />
+    </>
+  );
 }
 
 export default App;
