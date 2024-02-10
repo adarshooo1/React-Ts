@@ -1,10 +1,10 @@
 import "./App.css";
-import UseEffectHook from "./Revision/useEffectHook";
+import UseRefHook from "./starter/03-useRefHook";
 
 function App() {
   return (
     <>
-      <UseEffectHook />
+      <UseRefHook />
     </>
   );
 }
